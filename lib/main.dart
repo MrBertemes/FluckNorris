@@ -10,6 +10,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CategoriesPage();
+    return MaterialApp(
+      title: "FluckNorris",
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: CategoriesPage(),
+    );
   }
 }
